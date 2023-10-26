@@ -20,7 +20,7 @@ jobs:
         ports:
         - 27017:27017
 
-    runs-on: ${{ matrix.os }}
+    runs-on: [test, asdf]
     strategy:
       matrix:
         os: [ubuntu-latest]

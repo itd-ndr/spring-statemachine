@@ -7,7 +7,7 @@ jobs:
 
   # build and test, then upload logs if failure
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: [test, asdf]
     strategy:
       matrix:
         os: [ubuntu-latest]
